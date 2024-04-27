@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "nome": "Neemias",
+    "email": "neemias_50@hotmail.com",
+    "telefone": "(62)982055244",
+    "turno": "Matutino",
+    "curso": {
+      "id": 2,
+      "nome": "Angular"
+    }
+  }
+]

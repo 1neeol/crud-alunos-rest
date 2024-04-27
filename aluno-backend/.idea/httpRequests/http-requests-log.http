@@ -1,0 +1,50 @@
+GET http://localhost:8080/alunos
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-04-27T051635.200.json
+
+###
+
+GET http://localhost:8080/alunos
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-04-27T051417.200.json
+
+###
+
+GET http://localhost:8080/alunos
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-04-27T050759.200.json
+
+###
+
+POST http://localhost:8080/alunos
+Content-Type: application/json
+Content-Length: 160
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": 0,
+  "nome": "Neemias",
+  "email": "neemias_50@hotmail.com",
+  "telefone": "(62)982055244",
+  "turno": "Matutino",
+  "curso": {"id": 0, "nome": "2"}
+}
+
+<> 2024-04-27T050501.201.json
+
+###
+

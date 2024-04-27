@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro de Alunos</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <header class="display-4 bg-light text-center">
+    Cadastro de Alunos
+  </header>
+
+  <main class="container mt-3">
+    <section>
+      <div class="display-6">
+        Formulário de Cadastro:
+      </div>
+
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <form onsubmit="save(); return false;" id="formAluno">
+            <div class="row mb-3 mt-3">
+              <label for="inputName" class="col-sm-2 col-form-label">Nome:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputName" required>
+              </div>
+            </div>
+
+            <div class="row mb-3 mt-3">
+              <label for="inputMail" class="col-sm-2 col-form-label">Email:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="inputMail" required>
+              </div>
+
+              <label for="inputPhone" class="col-sm-2 col-form-label">Telefone:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="inputPhone" required>
+              </div>
+            </div>
+
+            <div class="row mb-3 mt-3">
+              <label for="selectCurso" class="col-sm-2 col-form-label">Curso:</label>
+              <div class="col-sm-4">
+                <select class="form-select" aria-label="Selecione um curso" id="selectCurso" required>
+                  <option value="" selected>Cursos:</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3 mt-3">
+              <label class="col-sm-2 col-form-label">Turno:</label>
+              <div class="col-sm-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="checkBoxManha">
+                  <label class="form-check-label" for="checkBoxManha">
+                    Manhã
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="checkBoxTarde">
+                  <label class="form-check-label" for="checkBoxTarde">
+                    Tarde
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="checkBoxNoite">
+                  <label class="form-check-label" for="checkBoxNoite">
+                    Noite
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3 mt-3">
+              <div class="col-sm-4">
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+    </section>
+    <hr>
+    <section>
+      <div class="display-6">
+        Alunos Cadastrados:
+      </div>
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <table class="table" id="alunosTable">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col" class="d-none d-md-table-cell">Email</th>
+                <th scope="col">Telefone</th>
+                <th scope="col">Curso</th>
+                <th scope="col" class="d-none d-md-table-cell">Turno</th>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-secondary text-center text-white fixed-bottom">
+    @NeeOL Sistemas
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
